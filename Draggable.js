@@ -1,4 +1,5 @@
 import React, { Component} from "react";
+import './draggable.scss';
 import {hot} from "react-hot-loader";
 
 class Draggable extends Component{

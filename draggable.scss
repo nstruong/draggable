@@ -1,0 +1,28 @@
+.row{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.draggable-container{
+    .draggable {
+        user-select: none;
+        /* Required to make elements draggable in old WebKit */
+        -khtml-user-drag: element;
+        -webkit-user-drag: element;
+    }
+    
+    .row {
+        cursor: move;
+    }
+
+    .row.over {
+        border: 2px dashed #000;
+    }
+}
